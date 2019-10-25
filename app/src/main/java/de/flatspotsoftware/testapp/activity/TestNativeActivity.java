@@ -93,14 +93,14 @@ public class TestNativeActivity extends NativeActivity implements CPPCallbacks {
             return;
         }
 
-        Log.wtf("INTERFASCE!!!",arg);
+        Log.i("INTERFASCE!!!",arg);
 
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
                 AlertDialog.Builder builder = new AlertDialog.Builder(TestNativeActivity.this);
 
-                builder.setMessage(CPPCallIns.getInstance().testCall("abc"));
+                builder.setMessage(CPPCallIns.getInstance().testCall("Alert Dialog !"));
 
                 builder.create().show();
             }
