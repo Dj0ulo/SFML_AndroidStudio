@@ -25,7 +25,7 @@ android {
                         "-DSFML_INCLUDE_DIR=${ndkDir}/sources/third_party/sfml/include",
                         "-DSFML_LIBRARY_DIR=${ndkDir}/sources/third_party/sfml/lib/",
                         "-DSFML_EXT_LIBRARY_DIR=${ndkDir}/sources/third_party/sfml/extlibs/lib/"
-                abiFilters 'armeabi-v7a'
+                abiFilters 'armeabi-v7a', 'arm64-v8a'
                 // multiple ABIs are supported
                 // but you have to compile SFML for every ABI you want to support
                 // abiFilters 'armeabi-v7a',  'armeabi'

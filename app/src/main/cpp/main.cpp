@@ -132,6 +132,7 @@ Java_de_flatspotsoftware_testapp_CPPCallIns_testCall(JNIEnv *env, jobject thiz, 
 // specific code, unless you want to use things not directly exposed.
 // ('vibrate()' in this example; undefine 'USE_JNI' above to disable it)
 int main(int argc, char *argv[]) {
+
     LOGI("CREATE SFML WINDOW");
     sf::RenderWindow window(sf::VideoMode::getDesktopMode(), "");
 
