@@ -120,7 +120,7 @@ int testCall(std::string arg) {
 extern "C"
 {
 JNIEXPORT jstring JNICALL
-Java_de_flatspotsoftware_testapp_CPPCallIns_testCall(JNIEnv *env, jobject thiz, jstring arg) {
+Java_sfml_com_sfml_1example_CPPCallIns_testCall(JNIEnv *env, jobject thiz, jstring arg) {
     std::string str = std::string(env->GetStringUTFChars(arg, JNI_FALSE));
     str.append(str);
     return env->NewStringUTF(str.c_str());
